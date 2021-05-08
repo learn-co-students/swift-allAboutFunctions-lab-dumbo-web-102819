@@ -14,9 +14,11 @@
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
 // write your code here
+func frozen(){
+    print("Let it go!")
+}
 
-
-
+frozen()
 
 
 
@@ -28,8 +30,12 @@
 // write your code here
 
 
+func frozenAgain(){
+    let sentence = "Let it go!"
+    print(sentence)
+}
 
-
+frozenAgain()
 
 
 
@@ -38,9 +44,13 @@
  */
 // write your code here
 
+func favCharacter(name:String){
+    print("My favorite character is \(name).")
+}
 
+let character = "Anna"
 
-
+favCharacter(name: character)
 
 
 
@@ -49,7 +59,9 @@
  */
 // write your code here
 
-
+var character2 = "Olaf"
+character2 = "Hans"
+favCharacter(name: character2)
 
 
 
@@ -61,9 +73,11 @@
 // write your code here
 
 
+func swiftAintOne(numberOfProblems:Int){
+    print("I got \(numberOfProblems) problems but Swift ain't one")
+}
 
-
-
+swiftAintOne(numberOfProblems: 9)
 
 
 
@@ -72,19 +86,25 @@
  */
 // write your code here
 
+func favBand(band:String, number:Int){
+    print("My #\(number) favorite band is \(band).")
+}
 
+let band = "Pink Floyd"
+let number = 1
 
+favBand(band: band, number: number)
 
 
 
 /*: question7
  ### 7. The code below is broken. Can you identify which line has an error and fix it so that it works again? Uncomment the code below before starting.
  */
-//func badFavoriteBand(bandName: String, position: Int) {
-//    print("My #\(position) favorite band is \(bandName).")
-//}
-//
-//badFavoriteBand("The Beatles", 2)
+func badFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName).")
+}
+
+badFavoriteBand(bandName: "The Beatles", position: 2)
 
 
 
@@ -95,11 +115,11 @@
 /*: question8
  ### 8. This code is broken, too. Assume the call to the function is correct. What's broken about the function definition? Can you fix it? Uncomment the code below before starting.
  */
-//func alsoBadFavoriteBand(bandName: String, position: String) {
-//    print("My #\(position) favorite band is \(bandName)")
-//}
-//
-//alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
+func alsoBadFavoriteBand(bandName: String, position: Int) {
+    print("My #\(position) favorite band is \(bandName)")
+}
+
+alsoBadFavoriteBand(bandName: "Blink-182", position: 42)
 
 
 
@@ -113,8 +133,11 @@
 // write your code here
 
 
+func madLib(name:String, noun:String, preposition: String){
+    print("To \(noun) and \(preposition), \(name)")
+}
 
-
+madLib(name: "blah", noun: "blah", preposition: "blah")
 
 
 
@@ -124,18 +147,22 @@
 // write your code here
 
 
+func returnString() -> String {
+    return "Buzz Lightyear to the rescue!"
+}
 
-
-
+returnString()
 
 
 /*: question11
  ### 11. Create a function that takes no arguments and returns any number.
  */
 // write your code here
+func returnNumber() -> Int{
+    return 5
+}
 
-
-
+returnNumber()
 
 
 
@@ -144,10 +171,12 @@
  */
 // write your code here
 
+func infinityAndBeyond(name:String) -> String{
+    return "To infinity and beyond, \(name.uppercased())!"
+}
 
 
 
-
-
+infinityAndBeyond(name: "Chloe")
 //: Click [here](https://github.com/learn-co-curriculum/swift-allAboutFunctions-lab/blob/solution/MyPlayground.playground/Pages/solution.xcplaygroundpage/Contents.swift) for a link to the solution.
 
